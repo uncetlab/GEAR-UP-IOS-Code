@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EsQ-Ta-qDA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="c24-Ag-KuS">
+            <objects>
+                <viewController storyboardIdentifier="Launch Screen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EsQ-Ta-qDA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cmQ-3m-T3c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash_screen_mississippi" translatesAutoresizingMaskIntoConstraints="NO" id="IgM-hi-kBW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo_mississippi" translatesAutoresizingMaskIntoConstraints="NO" id="2sN-Pd-cf4">
+                                <rect key="frame" x="76" y="395" width="262" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="CeE-H3-75g"/>
+                                    <constraint firstAttribute="height" constant="106" id="yPJ-Mq-YrY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2sN-Pd-cf4" firstAttribute="centerY" secondItem="cmQ-3m-T3c" secondAttribute="centerY" id="2BT-l7-29A"/>
+                            <constraint firstItem="IgM-hi-kBW" firstAttribute="leading" secondItem="cmQ-3m-T3c" secondAttribute="leading" id="abf-Hl-ID1"/>
+                            <constraint firstItem="2sN-Pd-cf4" firstAttribute="centerX" secondItem="cmQ-3m-T3c" secondAttribute="centerX" id="ljd-7p-kW0"/>
+                            <constraint firstItem="IgM-hi-kBW" firstAttribute="top" secondItem="cmQ-3m-T3c" secondAttribute="top" id="q0g-cO-Ntf"/>
+                            <constraint firstAttribute="bottom" secondItem="IgM-hi-kBW" secondAttribute="bottom" id="wqp-uv-cHD"/>
+                            <constraint firstItem="IgM-hi-kBW" firstAttribute="trailing" secondItem="cmQ-3m-T3c" secondAttribute="trailing" id="wrv-gr-3z4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vld-BJ-zEv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88g-UV-Esh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_splash_screen_mississippi" width="375" height="812"/>
+        <image name="logo_mississippi" width="172" height="131"/>
+    </resources>
+</document>

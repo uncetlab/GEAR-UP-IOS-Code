@@ -1,0 +1,58 @@
+PODS:
+  - AppCenter (3.1.1):
+    - AppCenter/Analytics (= 3.1.1)
+    - AppCenter/Crashes (= 3.1.1)
+  - AppCenter/Analytics (3.1.1):
+    - AppCenter/Core
+  - AppCenter/Core (3.1.1)
+  - AppCenter/Crashes (3.1.1):
+    - AppCenter/Core
+  - DLRadioButton (1.4.12)
+  - KeychainSwift (19.0.0)
+  - Mockingjay (3.0.0-alpha.1):
+    - Mockingjay/Core (= 3.0.0-alpha.1)
+    - Mockingjay/XCTest (= 3.0.0-alpha.1)
+  - Mockingjay/Core (3.0.0-alpha.1):
+    - URITemplate (~> 3.0)
+  - Mockingjay/XCTest (3.0.0-alpha.1):
+    - Mockingjay/Core
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - RangeSeekSlider (1.8.0)
+  - SGPlayerVR (2.0.3)
+  - URITemplate (3.0.0)
+
+DEPENDENCIES:
+  - AppCenter
+  - DLRadioButton (~> 1.4)
+  - KeychainSwift
+  - Mockingjay (= 3.0.0-alpha.1)
+  - NVActivityIndicatorView
+  - RangeSeekSlider
+  - SGPlayerVR
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
+    - DLRadioButton
+    - KeychainSwift
+    - Mockingjay
+    - NVActivityIndicatorView
+    - RangeSeekSlider
+    - SGPlayerVR
+    - URITemplate
+
+SPEC CHECKSUMS:
+  AppCenter: 513d32888854d67d8cfbd3a8db16aeb5fb2e2a75
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  Mockingjay: 0f7c5aa49c7f1b95621cee3c79b557141f5a225c
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  SGPlayerVR: fb77d8b7c21cc0607bd78714f716dc88b6c6349e
+  URITemplate: 58e0d47f967006c5d59888af5356c4a8ed3b197d
+
+PODFILE CHECKSUM: f9c0007a253b697658019848667c15b41d0be7cc
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentDetailViewController" customModule="GEAR_UP_VR" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="wNy-rH-iby" id="Zo6-Fa-qia"/>
+                <outlet property="playButton" destination="TOb-cO-GfH" id="ZNN-S6-z0n"/>
+                <outlet property="playerViewHeightConstraint" destination="UYG-yO-Kcc" id="Ixd-Ft-Lln"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="9Bg-ZX-U7d" id="wWD-hW-UT7"/>
+                <outlet property="webViewHeight" destination="ysO-9U-ABu" id="vPc-BZ-OyO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIV-tf-j8a">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fau-ag-jKT" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7c-KZ-IXx" userLabel="Player View" customClass="UIImageView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="211"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-rH-iby">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="211"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOb-cO-GfH">
+                                            <rect key="frame" x="185" y="83.666666666666671" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="TgI-Rs-bnB"/>
+                                                <constraint firstAttribute="width" constant="44" id="l2a-wb-WWv"/>
+                                            </constraints>
+                                            <state key="normal" image="ic_play_circle_outline"/>
+                                            <connections>
+                                                <action selector="playButtonDidPressed:" destination="-1" eventType="touchUpInside" id="cnG-8D-tfh"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="wNy-rH-iby" secondAttribute="trailing" id="CB2-M1-yaw"/>
+                                        <constraint firstItem="wNy-rH-iby" firstAttribute="leading" secondItem="P7c-KZ-IXx" secondAttribute="leading" id="Gqg-64-0Uo"/>
+                                        <constraint firstAttribute="height" constant="211" id="UYG-yO-Kcc"/>
+                                        <constraint firstItem="wNy-rH-iby" firstAttribute="top" secondItem="P7c-KZ-IXx" secondAttribute="top" id="Z7B-iD-F8u"/>
+                                        <constraint firstAttribute="bottom" secondItem="wNy-rH-iby" secondAttribute="bottom" id="dTY-XL-mgJ"/>
+                                        <constraint firstItem="TOb-cO-GfH" firstAttribute="centerY" secondItem="P7c-KZ-IXx" secondAttribute="centerY" id="fVE-As-koR"/>
+                                        <constraint firstItem="TOb-cO-GfH" firstAttribute="centerX" secondItem="P7c-KZ-IXx" secondAttribute="centerX" id="fsd-gr-rWS"/>
+                                    </constraints>
+                                </view>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bg-ZX-U7d">
+                                    <rect key="frame" x="0.0" y="211" width="414" height="577"/>
+                                    <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="577" id="ysO-9U-ABu"/>
+                                    </constraints>
+                                    <wkWebViewConfiguration key="configuration">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="P7c-KZ-IXx" secondAttribute="trailing" id="1qS-rl-J5H"/>
+                                <constraint firstItem="P7c-KZ-IXx" firstAttribute="top" secondItem="fau-ag-jKT" secondAttribute="top" id="AAq-zq-lQd"/>
+                                <constraint firstItem="9Bg-ZX-U7d" firstAttribute="leading" secondItem="fau-ag-jKT" secondAttribute="leading" id="BJD-0p-01f"/>
+                                <constraint firstAttribute="trailing" secondItem="9Bg-ZX-U7d" secondAttribute="trailing" id="Pgn-oa-1S5"/>
+                                <constraint firstAttribute="bottom" secondItem="9Bg-ZX-U7d" secondAttribute="bottom" id="QA4-cH-XxR"/>
+                                <constraint firstItem="P7c-KZ-IXx" firstAttribute="leading" secondItem="fau-ag-jKT" secondAttribute="leading" id="okc-Sr-Htb"/>
+                                <constraint firstItem="9Bg-ZX-U7d" firstAttribute="top" secondItem="P7c-KZ-IXx" secondAttribute="bottom" id="toL-yc-Tpg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fau-ag-jKT" secondAttribute="trailing" id="CSo-Rf-Rcv"/>
+                        <constraint firstItem="fau-ag-jKT" firstAttribute="width" secondItem="RIV-tf-j8a" secondAttribute="width" id="EDZ-7t-MMA"/>
+                        <constraint firstAttribute="bottom" secondItem="fau-ag-jKT" secondAttribute="bottom" id="HMA-Um-dVq"/>
+                        <constraint firstItem="fau-ag-jKT" firstAttribute="leading" secondItem="RIV-tf-j8a" secondAttribute="leading" id="LYP-o4-Nfn"/>
+                        <constraint firstItem="fau-ag-jKT" firstAttribute="top" secondItem="RIV-tf-j8a" secondAttribute="top" id="SNd-Pz-DAT"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Vrl-zk-oSq"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="7df-Qj-CG2"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RIV-tf-j8a" secondAttribute="bottom" id="Sk7-VL-inX"/>
+                <constraint firstItem="RIV-tf-j8a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xQK-ca-lCJ"/>
+                <constraint firstItem="RIV-tf-j8a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z3M-3a-MrY"/>
+                <constraint firstAttribute="trailing" secondItem="RIV-tf-j8a" secondAttribute="trailing" id="zD6-qE-00v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_play_circle_outline" width="44" height="44"/>
+    </resources>
+</document>

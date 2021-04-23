@@ -1,0 +1,35 @@
+line_length:
+  warning: 180
+  ignores_comments: true
+
+identifier_name:
+  min_length:
+    error: 3
+  max_length:
+    warning: 60
+  excluded:     # excluded via string array
+    - qa
+    - QA
+    - id
+    - i
+    - iD
+    - bt
+    - gt
+    - lt
+    - eq
+
+cyclomatic_complexity: 20
+
+function_body_length:
+    warning: 80
+    error: 150
+
+disabled_rules:
+  - switch_case_alignment
+  - vertical_parameter_alignment
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - GEAR UP VRTests
+  - GEAR UP VRUITests

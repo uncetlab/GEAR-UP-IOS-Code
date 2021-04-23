@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CareerTableViewCell" rowHeight="65" id="KGk-i7-Jjw" customClass="CareerTableViewCell" customModule="GEAR_UP_VR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5W-22-qs1">
+                        <rect key="frame" x="0.0" y="60" width="320" height="5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="BTT-YE-qyt"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kOw-cZ-WWF">
+                        <rect key="frame" x="15" y="7" width="47" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="M3V-of-z5J"/>
+                            <constraint firstAttribute="width" constant="47" id="aEA-yr-32l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDH-Om-tA9">
+                        <rect key="frame" x="76" y="22" width="238" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="oIw-XM-xlE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kOw-cZ-WWF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="GN3-KW-V1p"/>
+                    <constraint firstItem="kOw-cZ-WWF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="O6q-3l-Ql3"/>
+                    <constraint firstAttribute="trailing" secondItem="f5W-22-qs1" secondAttribute="trailing" id="OL1-V0-Dz7"/>
+                    <constraint firstItem="NDH-Om-tA9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="QNa-n6-wQK"/>
+                    <constraint firstAttribute="trailing" secondItem="NDH-Om-tA9" secondAttribute="trailing" constant="6" id="Xug-Sr-h2Y"/>
+                    <constraint firstAttribute="bottom" secondItem="f5W-22-qs1" secondAttribute="bottom" id="Yzu-ov-LiE"/>
+                    <constraint firstItem="NDH-Om-tA9" firstAttribute="leading" secondItem="kOw-cZ-WWF" secondAttribute="trailing" constant="14" id="Z5a-Te-2Zn"/>
+                    <constraint firstItem="f5W-22-qs1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sPo-A2-Zka"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellBottomBorder" destination="f5W-22-qs1" id="fva-WH-M2W"/>
+                <outlet property="cellImageView" destination="kOw-cZ-WWF" id="Cjf-iX-dzl"/>
+                <outlet property="cellTitle" destination="NDH-Om-tA9" id="5Ua-6Z-Z8t"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="126.22767857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_GEAR_UP_VR_GEAR_UP_VRUITests {
+  umbrella header "Pods-GEAR UP VR-GEAR UP VRUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
